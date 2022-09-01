@@ -11,13 +11,17 @@ KEV-IN is meant to be a temporary solution until a more streamlined process for 
 ### Dependencies
 The KEV-IN script has only been tested in Kali Linux. KEV-IN requires internet connectivity the first time it is run in an environment to pull down the most up-to-date KEV data and install 'csvtool' (if it is not already installed in the environment). Alternatively, the KEV CSV can be manually retrieved from the [CISA website](https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv), but needs to maintain the same naming convention (known_exploited_vulnerabilities.csv) and the 'csvtool' dependency can be manually installed by running the following command:
 
-        apt-get install csvtool
+```sh
+> apt-get install csvtool
+```
 
 KEV-IN ingests Nessus CSV files and requires that the 'References' parameter be selected when the CSV file is exported. Once a Nessus scan is complete, export the CSV for a given scan, ensuring the 'References' option is checked.
 
 ### Help Menu
 
-        ./kev-in.sh -h
+```sh
+> ./kev-in.sh -h
+```
 
 ```
     
@@ -42,7 +46,9 @@ KEV-IN ingests Nessus CSV files and requires that the 'References' parameter be 
 
 ### KEV Extraction
 
-        ./kev-in.sh -i /path/to/Nessus_abcdef.csv -o KnownExploitedVulnerabilities.csv
+```sh
+> ./kev-in.sh -i /path/to/Nessus_abcdef.csv -o KnownExploitedVulnerabilities.csv
+```
 
 ```
 
