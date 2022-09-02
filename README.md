@@ -2,9 +2,9 @@
 The KEV-IN bash script can be used to extract CISA Known Exploited Vulnerabilities from Nessus CSV files.
 
 ## Description
-The Known Exploited Vulnerability Ingestor (abbreviated KEV-IN) is a tool that extracts CVEs contained in the [Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) from Nessus CSV files. The purpose is to provide recipients of penetration testing services with a focused list of KEVs for prioritized mitigation, since KEVs pose a higher risk to environments, based on the threat landscape.
+The Known Exploited Vulnerability Ingestor (abbreviated KEV-IN) is a tool that extracts CVEs contained in the [Known Exploited Vulnerabilities (KEV) Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) from Nessus CSV files. The purpose is to provide recipients of penetration testing services with a focused list of KEVs for prioritized mitigation, since KEVs pose a higher risk to environments based on the threat landscape.
 
-KEV-IN is meant to be a temporary solution until a more streamlined process for deriving KEVs from scan results is implemented. The tool should be run in Kali and used on each Nessus scan CSV during an engagement. The output CSV file can be shared with stakeholders, in the even that KEVs were identified.
+KEV-IN is meant to be a temporary solution until a more streamlined process for deriving KEVs from scan results is implemented. The tool should be run in Kali and used on each Nessus scan CSV during an engagement. The output CSV file can be shared with stakeholders in the event that KEVs were identified.
 
 ## Usage
 
